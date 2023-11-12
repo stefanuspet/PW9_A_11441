@@ -48,16 +48,16 @@
             @endif
             <form method="post" action="{{route('actionRegister')}}">
                 @csrf
-                <div class="form-group">
-                    <label><i class="fa fa-envelope"></i>Email</label>
+                <div class="form-group mb-2">
+                    <label class="form-label"><i class="fa fa-envelope"></i>Email</label>
                     <input class="form-control" type="Email" name="email" placeholder="Email" required>
                 </div>
-                <div class="form-group">
-                    <label><i class="fa fa-user"></i>Username</label>
+                <div class="form-group mb-2">
+                    <label class="form-label"><i class="fa fa-user"></i>Username</label>
                     <input class="form-control" type="text" name="username" placeholder="Username" required>
                 </div>
-                <div class="form-group">
-                    <label><i class="fa fa-key"></i>Password</label>
+                <div class="form-group mb-2">
+                    <label class="form-label"><i class="fa fa-key"></i>Password</label>
                     <input class="form-control" type="password" name="password" placeholder="Password" required>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">

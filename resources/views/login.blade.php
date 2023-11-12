@@ -33,8 +33,6 @@
 </head>
 
 <body>
-    ﻿
-
     <div class="container center-container">
         <div class="col-md-4 login-box">
             <h2 class="text-center"><b>Login</b></h2>
@@ -45,12 +43,12 @@
             </div> @endif
             <form method="post" action="{{ route('actionLogin') }}">
                 @csrf
-                <div class="form-group">
-                    <label>Email</label>
+                <div class="form-group mb-2">
+                    <label class="form-label">Email</label>
                     <input class="form-control" type="email" name="email" placeholder="Email" required>
                 </div>
-                <div class="form-group">
-                    <label>Password</label>
+                <div class="form-group mb-2">
+                    <label class="form-label">Password</label>
                     <input class="form-control" type="password" name="password" placeholder="Password" required>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
